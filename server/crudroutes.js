@@ -6,17 +6,9 @@ const {
 } = require('./utils');
 
 const addPin = async (req, res) => {
-  const { imgLink: originalImgLink } = req.body;
   try {
     const updatedPinInfo = {
       ...req.body,
-      owner: {
-        name: 'displayName',
-        service: 'idk',
-        id: '0',
-      },
-      imgLink: originalImgLink,
-      originalImgLink,
     };
     const addedpin = await pins.create({ ...updatedPinInfo, isBroken: false });
     res.json(addedpin);
