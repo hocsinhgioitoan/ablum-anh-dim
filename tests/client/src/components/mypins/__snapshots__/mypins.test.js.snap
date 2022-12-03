@@ -1,0 +1,210 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Mypins Component Mypins landing page will render bubbles until ready 1`] = `
+<div
+  id="bubblecontainer"
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <div
+    className="bubbles A"
+  />
+  <div
+    className="bubbles B"
+  />
+  <div
+    className="bubbles C"
+  />
+</div>
+`;
+
+exports[`The Mypins Component Mypins landing page will render pins if found 1`] = `
+<Fragment>
+  <div>
+    <div
+      id="mypinframe"
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "marginTop": 80,
+          }
+        }
+      >
+        <ForwardRef(Typography)
+          variant="h4"
+        >
+          tester displayName
+        </ForwardRef(Typography)>
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+            }
+          }
+        />
+      </div>
+      <div
+        id="creatpinwrapper"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <div
+          id="createpin"
+        >
+          <i
+            aria-hidden="true"
+            className="fa fa-plus-circle"
+          />
+        </div>
+        <h3
+          id="createpintext"
+        >
+          Create Pin
+        </h3>
+      </div>
+    </div>
+    <ImageBuild
+      deletePin={[Function]}
+      displayBrokenImage={true}
+      pinImage={null}
+      pinList={
+        Array [
+          Object {
+            "_id": 2,
+            "createdAt": "2020-12-25T00:00:00.000+00:00",
+            "hasSaved": true,
+            "imgDescription": "imgDescription id-2",
+            "imgLink": "imgLink id-2",
+            "owner": "owner id-2",
+            "owns": false,
+            "savedBy": Array [
+              "savedBy - id-2",
+              "savedBy2 - id-2",
+            ],
+          },
+          Object {
+            "_id": 3,
+            "createdAt": "2020-12-25T00:00:00.000+00:00",
+            "hasSaved": false,
+            "imgDescription": "imgDescription id-3",
+            "imgLink": "imgLink id-3",
+            "owner": "owner id-3",
+            "owns": true,
+            "savedBy": Array [
+              "savedBy - id-3",
+              "savedBy2 - id-3",
+            ],
+          },
+        ]
+      }
+      ready={true}
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`The Mypins Component Mypins landing page will render welcome message if no pins found 1`] = `
+<Fragment>
+  <div>
+    <div
+      id="mypinframe"
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "marginTop": 80,
+          }
+        }
+      >
+        <ForwardRef(Typography)
+          variant="h4"
+        >
+          tester displayName
+        </ForwardRef(Typography)>
+        <div
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+            }
+          }
+        />
+      </div>
+      <div
+        id="creatpinwrapper"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <div
+          id="createpin"
+        >
+          <i
+            aria-hidden="true"
+            className="fa fa-plus-circle"
+          />
+        </div>
+        <h3
+          id="createpintext"
+        >
+          Create Pin
+        </h3>
+      </div>
+    </div>
+    <ForwardRef(Box)
+      sx={
+        Object {
+          "backgroundColor": "#eeeeee",
+          "height": 100,
+          "marginLeft": "auto",
+          "marginRight": "auto",
+          "marginTop": 10,
+          "padding": 2,
+          "width": 500,
+        }
+      }
+    >
+      <ForwardRef(Typography)
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+        variant="h4"
+      >
+        Welcome!
+      </ForwardRef(Typography)>
+      <ForwardRef(Typography)
+        variant="h6"
+      >
+        To get started, you can create your own pin, or save an existing pin from the
+         
+        <Link
+          exact={true}
+          to="/"
+        >
+          home
+        </Link>
+         
+        page
+      </ForwardRef(Typography)>
+    </ForwardRef(Box)>
+  </div>
+</Fragment>
+`;
