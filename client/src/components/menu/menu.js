@@ -159,13 +159,7 @@ export class Menu extends React.Component {
             </a>
           </div>
           {this.renderSearch()}
-          <div className="items signin">
-            <i
-              className="fa fa-sign-in"
-              aria-hidden="true"
-              onClick={() => this.setState({ displaySignIn: true })}
-            />
-          </div>
+          
           {displaySignIn && (
             <SignIn
               removeSignin={() => this.setState({ displaySignIn: false })}

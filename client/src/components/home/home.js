@@ -66,9 +66,10 @@ export class Home extends Component {
   }
 
   render() {
-    const { user: { authenticated, username }, search } = this.props;
+    let { user: { authenticated, username }, search } = this.props;
     const { pinList, displaySignIn, ready } = this.state;
     const filteredPins = getFilteredPins(pinList, search);
+    username = 'Guest'
     if (username !== null) {
       return (
         <React.Fragment>
